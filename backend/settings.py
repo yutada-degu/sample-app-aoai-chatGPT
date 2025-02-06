@@ -105,9 +105,9 @@ class _AzureOpenAISettings(BaseSettings):
     key: Optional[str] = None
     resource: Optional[str] = None
     endpoint: Optional[str] = None
-    temperature: float = 0
-    top_p: float = 0
-    max_tokens: int = 1000
+#    temperature: float = 0
+#    top_p: float = 0
+#    max_tokens: int = 1000
     stream: bool = True
     stop_sequence: Optional[List[str]] = None
     seed: Optional[int] = None
@@ -115,9 +115,9 @@ class _AzureOpenAISettings(BaseSettings):
     user: Optional[str] = None
     tools: Optional[conlist(_AzureOpenAITool, min_length=1)] = None
     tool_choice: Optional[str] = None
-    logit_bias: Optional[dict] = None
-    presence_penalty: Optional[confloat(ge=-2.0, le=2.0)] = 0.0
-    frequency_penalty: Optional[confloat(ge=-2.0, le=2.0)] = 0.0
+#    logit_bias: Optional[dict] = None
+#    presence_penalty: Optional[confloat(ge=-2.0, le=2.0)] = 0.0
+#    frequency_penalty: Optional[confloat(ge=-2.0, le=2.0)] = 0.0
     system_message: str = "You are an AI assistant that helps people find information."
     preview_api_version: str = MINIMUM_SUPPORTED_AZURE_OPENAI_PREVIEW_API_VERSION
     embedding_endpoint: Optional[str] = None
